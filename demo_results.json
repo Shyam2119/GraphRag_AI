@@ -10,56 +10,56 @@
     "graph_result_count": 8,
     "vector_result_count": 8,
     "fused_result_count": 8,
-    "answer_length": 1948,
-    "answer": "Based on analysis of 8 retrieved Reddit discussions:\n\nQuestion focus: What are the main challenges people face when building RAG pipelines?\n\n**Key themes identified:** RAG pipelines, open-source LLM development, agentic AI systems, model performance and benchmarks\n\n- EpsteinFiles-RAG: Building a RAG Pipeline on 2M+ Pages I love playing around with RAG and AI, optimizing every layer to squeeze out better performance. Last night I thought: why not tackle something m\n  *[Cod3Conjurer in r/LocalLLaMA, 2026-02-11T05:02:36] https://reddit.com/r/LocalLLaMA/comments/1r1oan9/epsteinfilesrag_building_a_rag_pipeline_on_2m/*\n\n- If you actually understood why hallucinations happen in the first place, you would know such framework does not address the problem of hallucinations at all. If anything, you are raising the possibili\n  *[ChalkStack in r/artificial, 2026-03-25T06:31:21] https://reddit.com/r/artificial/comments/1s2i90f/what_if_your_ai_agent_could_fix_its_own/occix1v/*\n\n- The problems with LLMs are the same as the problems with people: if there is no way to independently verify what is true, then we default to whatever we hear/see the most. Once an idea sets in, even v\n  *[Bakoro in r/MachineLearning, 2025-09-07T07:21:15] https://reddit.com/r/MachineLearning/comments/1namvsk/*\n\n- [D] M1 Pro is hitting a wall with LLMs. Upgrade to M5 Max now or wait for the M6 redesign?\n  *[tom_mathews in r/MachineLearning, 2026-03-06T01:43:17] https://reddit.com/r/MachineLearning/comments/1rm0md8/d_m1_pro_is_hitting_a_wall_with_llms_upgrade_to/*\n\n- Traditional RAG has a silent failure mode nobody talks about enough\n  *[singh_taranjeet in r/LocalLLaMA, 2026-03-19T17:46:54] https://reddit.com/r/LocalLLaMA/comments/1ry7ac0/*\n\n\n**Bottom line:** The answer above is based on retrieved graph and vector evidence. When no external LLM is available or a provider request fails, this local synthesis path preserves citations and keeps the demo usable.",
+    "answer_length": 1668,
+    "answer": "Based on analysis of 8 retrieved Reddit discussions:\n\nQuestion focus: What are the main challenges people face when building RAG pipelines?\n\n**Key themes identified:** RAG pipelines, AI safety considerations, AI regulation and policy, agentic AI systems\n\n- Sentiment shift: RAG hype cooling, agent frameworks rising Six months ago everyone was building RAG. Now the conversation has shifted to AI agents with tool use. RAG is still foundational infrastructu\n  *[neural_nomad in r/MachineLearning, 2026-02-22T15:12:00] https://reddit.com/r/MachineLearning/comments/sample_p26/*\n\n- Comprehensive guide to building RAG with ChromaDB and LangChain After months of experimentation, here's my complete guide to production RAG. Key lessons: 1) Metadata filtering is crucial for large cor\n  *[ml_researcher_42 in r/MachineLearning, 2025-07-12T05:44:00] https://reddit.com/r/MachineLearning/comments/sample_p2/*\n\n- AI regulation update: G7 Hiroshima AI Code of Conduct gaining adoption\n  *[govtech_analyst in r/artificial, 2026-03-27T05:53:00] https://reddit.com/r/artificial/comments/sample_p30/*\n\n- Who are the most influential voices in AI regulation right now?\n  *[policy_wonk in r/artificial, 2026-02-21T13:48:00] https://reddit.com/r/artificial/comments/sample_p31/*\n\n- Building agents that are safe by design, not safe by hope\n  *[quant_researcher in r/MachineLearning, 2026-01-01T06:48:00] https://reddit.com/r/MachineLearning/comments/sample_p32/*\n\n\n**Bottom line:** The answer above is based on retrieved graph and vector evidence. When no external LLM is available or a provider request fails, this local synthesis path preserves citations and keeps the demo usable.",
     "fused_results": [
       {
-        "id": "post_1r1oan9",
-        "score": 0.02218237704918033,
+        "id": "post_sample_p26",
+        "score": 0.021974206349206347,
         "source": "fused",
-        "text": "EpsteinFiles-RAG: Building a RAG Pipeline on 2M+ Pages I love playing around with RAG and AI, optimizing every layer to squeeze out better performance. Last night I thought: why not tackle something massive?\n\nTook the Epstein Files dataset from Hugging Face (teyler/epstein-files-20k) – 2 million+ pa"
+        "text": "Sentiment shift: RAG hype cooling, agent frameworks rising Six months ago everyone was building RAG. Now the conversation has shifted to AI agents with tool use. RAG is still foundational infrastructure but no longer the headline. The new frontier is autonomous systems that retrieve, reason, and act"
       },
       {
-        "id": "comment_occix1v_chunk_0",
-        "score": 0.01639344262295082,
+        "id": "post_sample_p2",
+        "score": 0.021933621933621934,
         "source": "fused",
-        "text": "If you actually understood why hallucinations happen in the first place, you would know such framework does not address the problem of hallucinations at all. If anything, you are raising the possibility of hallucinations by adding side tasks that are completely different from the primary one, contam"
+        "text": "Comprehensive guide to building RAG with ChromaDB and LangChain After months of experimentation, here's my complete guide to production RAG. Key lessons: 1) Metadata filtering is crucial for large corpora, 2) Hybrid search (BM25 + dense) outperforms either alone, 3) The embedding model matters more "
       },
       {
-        "id": "comment_ncypwtz_chunk_0",
-        "score": 0.016129032258064516,
-        "source": "fused",
-        "text": "The problems with LLMs are the same as the problems with people: if there is no way to independently verify what is true, then we default to whatever we hear/see the most. Once an idea sets in, even verifiable facts may not be able to remove the false idea. What's more, sometimes we have to ignore o"
-      },
-      {
-        "id": "post_1rm0md8_chunk_0",
-        "score": 0.015873015873015872,
-        "source": "fused",
-        "text": "[D] M1 Pro is hitting a wall with LLMs. Upgrade to M5 Max now or wait for the M6 redesign?\n\nI'm an AI Engineer currently daily-driving a 16\" M1 Pro MBP. It’s been a workhorse, but I’m feeling the bottleneck when running larger local LLMs (30B+ parameters or heavy RAG pipelines).\nWith the M5 Pro/Max "
-      },
-      {
-        "id": "post_1ry7ac0_chunk_0",
-        "score": 0.015384615384615385,
-        "source": "fused",
-        "text": "Traditional RAG has a silent failure mode nobody talks about enough\n\nSpent the better part of last year building RAG pipelines for different use cases. The thing that kept bothering me was not the obvious failures. It was the quiet ones.. Traditional RAG fails loudly when it retrieves nothing. But i"
-      },
-      {
-        "id": "post_1n2bufl_chunk_0",
+        "id": "post_sample_p30_chunk_0",
         "score": 0.015151515151515152,
         "source": "fused",
-        "text": "Are AI language models good at rating world building projects?\n\nI asked multiple AI assistants(ChatGPT, DeepSeek, Gemini and few more) to rate an overview of my big world building project. All of them either said 9/10 or 10/10, but that got me thinking if they are just programmed to say that. I do n"
+        "text": "AI regulation update: G7 Hiroshima AI Code of Conduct gaining adoption\n\nBeyond the EU AI Act, the G7 Code of Conduct for AI is being adopted voluntarily by major tech companies. Key principles: transparency in AI capabilities, responsible disclosure of safety incidents, and commitment to red-teaming"
       },
       {
-        "id": "post_1odystc_chunk_1",
+        "id": "post_sample_p31_chunk_0",
         "score": 0.014925373134328358,
         "source": "fused",
-        "text": "t relevant child chunks are identified, their larger \"parent\" text portions (which contain more context) are retrieved to be used as context for the LLM.\n\nThe idea is that the small chunks improve retrieval precision (reducing \"lost in the middle\" and semantic drift), while the large chunks provide "
+        "text": "Who are the most influential voices in AI regulation right now?\n\nTracking the most-cited people in AI regulation discussions: Yoshua Bengio continues pushing for mandatory evaluations, Stuart Russell advocates for provably beneficial AI, and Timnit Gebru focuses on environmental and social impact. O"
       },
       {
-        "id": "post_1s2i90f_chunk_8",
+        "id": "post_sample_p32_chunk_0",
+        "score": 0.01639344262295082,
+        "source": "fused",
+        "text": "Building agents that are safe by design, not safe by hope\n\nOur approach to agent safety: capability-based access control (agents can only access what they're explicitly granted), execution sandboxing, mandatory human approval for destructive actions, and comprehensive audit logging. Safety shouldn't"
+      },
+      {
+        "id": "post_sample_p1_chunk_0",
+        "score": 0.016129032258064516,
+        "source": "fused",
+        "text": "RAG systems are getting really good — here's my experience\n\nI've been building production RAG pipelines for 6 months now. Vector search combined with reranking has improved recall significantly. The key breakthrough was switching from naive chunking to semantic chunking with overlap. Still strugglin"
+      },
+      {
+        "id": "post_sample_p35_chunk_0",
+        "score": 0.015384615384615385,
+        "source": "fused",
+        "text": "Emerging concern: AI agents as attack vectors in cybersecurity\n\nNew threat model: compromised AI agents with access to production systems. Unlike traditional malware, a manipulated agent can use social engineering via natural language. OWASP is developing a top-10 for AI agents. This wasn't on anyon"
+      },
+      {
+        "id": "post_sample_p22_chunk_0",
         "score": 0.014705882352941176,
         "source": "fused",
-        "text": "nd the ground truth problem honestly.\n\n**UPDATE — March 26, 2026**\n\nThe original post overclaimed. I said the framework \"fixes AI hallucinations.\" That was not demonstrated. Here is what is actually demonstrated, and what has been built since.\n\n**What the original post got wrong:**\n\nThe headline cla"
+        "text": "The real cost of AI regulation: small startups can't compete\n\nNew compliance requirements favor large companies with legal teams and resources. A startup deploying a chatbot shouldn't face the same burden as Google deploying a model used by billions. Risk-proportionate regulation is essential."
       }
     ]
   },
@@ -71,59 +71,59 @@
     ],
     "time_start": null,
     "time_end": null,
-    "graph_result_count": 8,
+    "graph_result_count": 5,
     "vector_result_count": 8,
     "fused_result_count": 8,
-    "answer_length": 780,
-    "answer": "Based on analysis of 9 retrieved Reddit discussions:\n\nQuestion focus: Who are the most influential voices in discussions about AI regulation, and what are they saying?\n\n**Key themes identified:** RAG pipelines, AI regulation and policy, model performance and benchmarks\n\n- **Source 1** (fused, score=0.016)\n  *[[deleted] in r/, ] user_[deleted]*\n\n- **Source 2** (fused, score=0.016)\n  *[vzq in r/, ] user_vzq*\n\n- **Source 3** (fused, score=0.016)\n  *[access153 in r/, ] user_access153*\n\n- **Source 4** (fused, score=0.016)\n  *[ade17_in in r/, ] user_ade17_in*\n\n\n**Bottom line:** The answer above is based on retrieved graph and vector evidence. When no external LLM is available or a provider request fails, this local synthesis path preserves citations and keeps the demo usable.",
+    "answer_length": 890,
+    "answer": "Based on analysis of 9 retrieved Reddit discussions:\n\nQuestion focus: Who are the most influential voices in discussions about AI regulation, and what are they saying?\n\n**Key themes identified:** open-source LLM development, AI regulation and policy, model performance and benchmarks, community engagement\n\n- **Source 1** (fused, score=0.016)\n  *[Stuart Russell in r/artificial] entity_Stuart Russell*\n\n- **Source 2** (fused, score=0.016)\n  *[Timnit Gebru in r/artificial] entity_Timnit Gebru*\n\n- **Source 3** (fused, score=0.016)\n  *[Sam Altman in r/artificial] entity_Sam Altman*\n\n- **Source 4** (fused, score=0.016)\n  *[Yann LeCun in r/artificial] entity_Yann LeCun*\n\n\n**Bottom line:** The answer above is based on retrieved graph and vector evidence. When no external LLM is available or a provider request fails, this local synthesis path preserves citations and keeps the demo usable.",
     "fused_results": [
       {
-        "id": "user_Only_Emergencies",
+        "id": "entity_Yoshua Bengio",
         "score": 0.01639344262295082,
         "source": "fused",
-        "text": "Author: Only_Emergencies (score=404.0, posts=1)\n[D] Is senior ML engineering just API calls now? I’m a Senior ML engineer with around 9 years of experience. I work at a large government institution, implementing (integrating?) AI for cybersecurity, and I’m currently in the process of building a new "
+        "text": "Yoshua Bengio: mentioned 4 times across 2 authors in artificial.\nYoshua Bengio and Stuart Russell call for mandatory safety evaluations In a joint statement, Bengio and Russell advocate for mandatory pre-deployment safety evaluations for models above a capability threshold. Industry pushback is stro"
       },
       {
-        "id": "user_[deleted]",
+        "id": "entity_Stuart Russell",
         "score": 0.016129032258064516,
         "source": "fused",
-        "text": "Author: [deleted] (score=319.0, posts=3)\nWhy is everyone freaking out over an AI crash right now? In a span of a summer, my feed has gone from AGI by 2027 to now post after post predicting that the AI bubble will pop within the next year. \n\nWhat gives? Are people just being bipolar in regards to AI "
+        "text": "Stuart Russell: mentioned 4 times across 2 authors in artificial.\nYoshua Bengio and Stuart Russell call for mandatory safety evaluations In a joint statement, Bengio and Russell advocate for mandatory pre-deployment safety evaluations for models above a capability threshold. Industry pushback is str"
       },
       {
-        "id": "user_vzq",
+        "id": "entity_Timnit Gebru",
         "score": 0.015873015873015872,
         "source": "fused",
-        "text": "Author: vzq (score=314.0, posts=1)\nSometimes you use the API. Sometimes the API uses you."
+        "text": "Timnit Gebru: mentioned 2 times across 1 authors in artificial.\nWho are the most influential voices in AI regulation right now? Tracking the most-cited people in AI regulation discussions: Yoshua Bengio continues pushing for mandatory evaluations, Stuart Russell advocates for provably beneficial AI,"
       },
       {
-        "id": "user_access153",
+        "id": "entity_Sam Altman",
         "score": 0.015625,
         "source": "fused",
-        "text": "Author: access153 (score=302.0, posts=1)\nThey're freaking out because, if true at all, the tech sector of the market is so heavily propped up by AI hype that it'd mean major financial blowback if it were indeed a hype bubble that never delivers value. Our market kind of feels like it's propped up on"
+        "text": "Sam Altman: mentioned 2 times across 1 authors in artificial.\nWho are the most influential voices in AI regulation right now? Tracking the most-cited people in AI regulation discussions: Yoshua Bengio continues pushing for mandatory evaluations, Stuart Russell advocates for provably beneficial AI, a"
       },
       {
-        "id": "user_ade17_in",
+        "id": "entity_Yann LeCun",
         "score": 0.015384615384615385,
         "source": "fused",
-        "text": "Author: ade17_in (score=238.0, posts=2)\nAdvice for PhD students in this Al slop paper era - I feel academia needs serious revisions! [D] Looking at 30k submissions at a single conference venue and also recent AI written paper with AI written reviews - I'm seriously worried about where this is headin"
+        "text": "Yann LeCun: mentioned 2 times across 1 authors in artificial.\nWho are the most influential voices in AI regulation right now? Tracking the most-cited people in AI regulation discussions: Yoshua Bengio continues pushing for mandatory evaluations, Stuart Russell advocates for provably beneficial AI, a"
       },
       {
-        "id": "user_Old-School8916",
-        "score": 0.015151515151515152,
+        "id": "post_sample_p20_chunk_0",
+        "score": 0.006060606060606061,
         "source": "fused",
-        "text": "Author: Old-School8916 (score=186.0, posts=1)\nAI written papers with AI written reviews and people using AI to read those AI papers\n\nif anything I've learned that people are lazy"
+        "text": "LocalLLaMA community milestones: 500K members and growing\n\nr/LocalLLaMA just hit 500K subscribers. The community has produced 200+ fine-tuned models, 50+ inference frameworks, and countless quantization experiments. We're not just consumers of AI — we're builders. The most active contributors are re"
       },
       {
-        "id": "user_Cod3Conjurer",
-        "score": 0.014925373134328358,
+        "id": "post_sample_p16_chunk_0",
+        "score": 0.0058823529411764705,
         "source": "fused",
-        "text": "Author: Cod3Conjurer (score=185.0, posts=2)\nEpsteinFiles-RAG: Building a RAG Pipeline on 2M+ Pages I love playing around with RAG and AI, optimizing every layer to squeeze out better performance. Last night I thought: why not tackle something massive?\n\nTook the Epstein Files dataset from Hugging Fac"
+        "text": "Worried about the pace of open-source model releases without safety testing\n\nThree new 70B+ models released this week alone, none with comprehensive safety evaluations. The open-source community moves fast but safety testing is lagging. We need shared safety benchmarks that every model release shoul"
       },
       {
-        "id": "user_fortune",
-        "score": 0.014705882352941176,
+        "id": "post_sample_p31_chunk_0",
+        "score": 0.006557377049180328,
         "source": "fused",
-        "text": "Author: fortune (score=172.0, posts=1)\n'I'm deeply uncomfortable': Anthropic CEO warns that a cadre of AI leaders, including himself, should not be in charge of the technology’s future | Fortune"
+        "text": "Who are the most influential voices in AI regulation right now?\n\nTracking the most-cited people in AI regulation discussions: Yoshua Bengio continues pushing for mandatory evaluations, Stuart Russell advocates for provably beneficial AI, and Timnit Gebru focuses on environmental and social impact. O"
       }
     ]
   },
@@ -136,59 +136,59 @@
     ],
     "time_start": null,
     "time_end": null,
-    "graph_result_count": 3,
+    "graph_result_count": 2,
     "vector_result_count": 8,
     "fused_result_count": 8,
-    "answer_length": 1566,
-    "answer": "Based on analysis of 8 retrieved Reddit discussions:\n\nQuestion focus: Which communities are leading the conversation on open-source LLMs, and what priorities distinguish them?\n\n**Key themes identified:** RAG pipelines, open-source LLM development, agentic AI systems, model performance and benchmarks\n\n- r/LocalLLaMA: 39 discussions, total score 850.0\n  *[unknown in r/LocalLLaMA, ] subreddit_LocalLLaMA*\n\n-  impossible. But we believed we could do the impossible. Our goal was to get our training setup running at scale on the Memphis cluster ASAP. Towards the end of our 120 day deadline, we were riddled w\n  *[AskGpts in r/artificial, 2025-08-14T20:48:32] https://reddit.com/r/artificial/comments/1mqcrw4/xai_cofounder_leaves_to_launch_ai_safety_venture/*\n\n- r/MachineLearning: 20 discussions, total score 350.0\n  *[unknown in r/MachineLearning, ] subreddit_MachineLearning*\n\n- r/artificial: 34 discussions, total score 312.0\n  *[unknown in r/artificial, ] subreddit_artificial*\n\n- er such resistence to the merge I would have spent some time researching other possibilities, but alas, here we are, it works for us and that's what matters, and I'd do it again because I learned a lo\n  *[GGrassia in r/LocalLLaMA, 2025-12-30T09:42:11] https://reddit.com/r/LocalLLaMA/comments/1pzd0s1/best_rag_framework_for_largescale_document_search/nwpebi4/*\n\n\n**Bottom line:** The answer above is based on retrieved graph and vector evidence. When no external LLM is available or a provider request fails, this local synthesis path preserves citations and keeps the demo usable.",
+    "answer_length": 1363,
+    "answer": "Based on analysis of 8 retrieved Reddit discussions:\n\nQuestion focus: Which communities are leading the conversation on open-source LLMs, and what priorities distinguish them?\n\n**Key themes identified:** RAG pipelines, AI safety considerations, open-source LLM development, model performance and benchmarks\n\n- r/LocalLLaMA: 2 discussions, total score 2758.0\n  *[unknown in r/LocalLLaMA] subreddit_LocalLLaMA*\n\n- r/artificial: 2 discussions, total score 364.0\n  *[unknown in r/artificial] subreddit_artificial*\n\n- GraphRAG 2.0: what we've learned from deploying graph-enhanced retrieval\n  *[alignment_researcher in r/MachineLearning, 2026-03-07T09:13:00] https://reddit.com/r/MachineLearning/comments/sample_p28/*\n\n- Open-source LLMs now match GPT-4 on most benchmarks — what's next?\n  *[quant_researcher in r/LocalLLaMA, 2026-03-07T03:54:00] https://reddit.com/r/LocalLLaMA/comments/sample_p29/*\n\n- GraphRAG is promising but the entity extraction step is expensive. We're spending more on extraction than on the actual queries.\n  *[oss_enthusiast in r/artificial, 2025-12-26T07:01:00] https://reddit.com/r/artificial/comments/sample_p22/c58/*\n\n\n**Bottom line:** The answer above is based on retrieved graph and vector evidence. When no external LLM is available or a provider request fails, this local synthesis path preserves citations and keeps the demo usable.",
     "fused_results": [
       {
         "id": "subreddit_LocalLLaMA",
         "score": 0.013114754098360656,
         "source": "fused",
-        "text": "r/LocalLLaMA: 39 discussions, total score 850.0"
-      },
-      {
-        "id": "post_1mqcrw4_chunk_7",
-        "score": 0.013114754098360656,
-        "source": "fused",
-        "text": " impossible. But we believed we could do the impossible. Our goal was to get our training setup running at scale on the Memphis cluster ASAP. Towards the end of our 120 day deadline, we were riddled with mysterious issues with communicating over RDMA between the machines. Elon decided to fly to the "
-      },
-      {
-        "id": "subreddit_MachineLearning",
-        "score": 0.012698412698412698,
-        "source": "fused",
-        "text": "r/MachineLearning: 20 discussions, total score 350.0"
+        "text": "r/LocalLLaMA: 2 discussions, total score 2758.0"
       },
       {
         "id": "subreddit_artificial",
         "score": 0.012903225806451613,
         "source": "fused",
-        "text": "r/artificial: 34 discussions, total score 312.0"
+        "text": "r/artificial: 2 discussions, total score 364.0"
       },
       {
-        "id": "comment_nwpebi4_chunk_2",
-        "score": 0.012903225806451613,
-        "source": "fused",
-        "text": "er such resistence to the merge I would have spent some time researching other possibilities, but alas, here we are, it works for us and that's what matters, and I'd do it again because I learned a lot of stuff in the process. \nA colleague suggested falkordb but I'm really not happy of traversing a "
-      },
-      {
-        "id": "comment_ncypwtz_chunk_0",
-        "score": 0.012698412698412698,
-        "source": "fused",
-        "text": "The problems with LLMs are the same as the problems with people: if there is no way to independently verify what is true, then we default to whatever we hear/see the most. Once an idea sets in, even verifiable facts may not be able to remove the false idea. What's more, sometimes we have to ignore o"
-      },
-      {
-        "id": "comment_nv76weq_chunk_1",
-        "score": 0.0125,
-        "source": "fused",
-        "text": "lexical) to boost precision on niche queries. For no-code or low-code RAG setups you might try options like LlmFlowDesigner, Haystack, or Weaviate depending on whether you want a visual workflow builder, a developer toolkit, or a vector database, but the immediate wins are better chunking, embedding"
-      },
-      {
-        "id": "post_1s2i90f_chunk_7",
+        "id": "post_sample_p28_chunk_0",
         "score": 0.012121212121212121,
         "source": "fused",
-        "text": "sk found two of three frontier systems hallucinated plausible-sounding but fabricated answers while the ECE system retrieved correct primary evidence.\n\nThe paper also now includes a hypothesis section on K as a native training objective integrated directly into the transformer architecture, a full e"
+        "text": "GraphRAG 2.0: what we've learned from deploying graph-enhanced retrieval\n\nAfter 6 months of running GraphRAG in production: 1) Community detection in the graph reveals topic clusters that embeddings miss, 2) Temporal edges are essential — relationships that were true in Q3 may not hold in Q1, 3) Ent"
+      },
+      {
+        "id": "post_sample_p29_chunk_0",
+        "score": 0.013114754098360656,
+        "source": "fused",
+        "text": "Open-source LLMs now match GPT-4 on most benchmarks — what's next?\n\nThe gap has closed. Llama 3.3, Qwen 2.5, and DeepSeek V3 match or exceed GPT-4 on standard benchmarks. The open-source community proved that model capability isn't a moat. What's next? Better tooling, easier deployment, and multimod"
+      },
+      {
+        "id": "comment_c58_chunk_0",
+        "score": 0.0125,
+        "source": "fused",
+        "text": "GraphRAG is promising but the entity extraction step is expensive. We're spending more on extraction than on the actual queries."
+      },
+      {
+        "id": "post_sample_p7_chunk_0",
+        "score": 0.011764705882352941,
+        "source": "fused",
+        "text": "Embedding model comparison: which one should you use for RAG in 2025?\n\nTested 12 embedding models on our internal retrieval benchmark. Top performers: 1) Cohere embed-v3, 2) OpenAI text-embedding-3-large, 3) BGE-large-en-v1.5. Surprisingly, the open-source BGE model comes within 3% of the best comme"
+      },
+      {
+        "id": "post_sample_p16_chunk_0",
+        "score": 0.012903225806451613,
+        "source": "fused",
+        "text": "Worried about the pace of open-source model releases without safety testing\n\nThree new 70B+ models released this week alone, none with comprehensive safety evaluations. The open-source community moves fast but safety testing is lagging. We need shared safety benchmarks that every model release shoul"
+      },
+      {
+        "id": "comment_c52_chunk_0",
+        "score": 0.012698412698412698,
+        "source": "fused",
+        "text": "GraphRAG is promising but the entity extraction step is expensive. We're spending more on extraction than on the actual queries."
       }
     ]
   },
@@ -200,53 +200,59 @@
     ],
     "time_start": "2026-01-01T00:00:00",
     "time_end": "2026-03-31T23:59:59",
-    "graph_result_count": 2,
+    "graph_result_count": 5,
     "vector_result_count": 8,
-    "fused_result_count": 7,
-    "answer_length": 1676,
-    "answer": "Based on analysis of 8 retrieved Reddit discussions:\n\nQuestion focus: What emerging concerns about AI safety appeared in Q1 2026 that weren't discussed in Q4 2025?\n\n**Key themes identified:** RAG pipelines, AI safety considerations, open-source LLM development, AI regulation and policy\n\n- **Source 1** (window=Q1_2026, sentiment=neutral, score=0.034)\n  *[BookPast8673 in r/artificial, 2026-02-11T18:01:54] https://reddit.com/r/artificial/comments/1r223lp/rlhf_safety_training_enforces_what_ai_can_say/o4u6yxc/*\n\n- **Source 2** (window=Q1_2026, sentiment=neutral, score=0.021)\n  *[Plastic-Ordinary-833 in r/artificial, 2026-02-12T01:44:39] https://reddit.com/r/artificial/comments/1r223lp/rlhf_safety_training_enforces_what_ai_can_say/o4wp9fq/*\n\n- **Source 3** (window=Q1_2026, sentiment=mixed, score=0.011)\n  *[formatme in r/LocalLLaMA, 2026-03-20T03:10:14] https://reddit.com/r/LocalLLaMA/comments/1ry865a/is_qwen_35_08b_the_optimal_choice_for_local_rag/obf8hvx/*\n\n- **Source 4** (window=Q1_2026, sentiment=neutral, score=0.011)\n  *[abbas_ai in r/artificial, 2026-01-16T03:42:31] https://reddit.com/r/artificial/comments/1qe5ax3/what_3000_ai_case_studies_actually_tell_us_and/*\n\n\n**Temporal Analysis:** The retrieved evidence shows meaningful change across time windows. Later discussions put more emphasis on deployment risks, agent behavior, and governance than earlier periods, while earlier periods are more weighted toward foundational capabilities.\n\n**Bottom line:** The answer above is based on retrieved graph and vector evidence. When no external LLM is available or a provider request fails, this local synthesis path preserves citations and keeps the demo usable.",
+    "fused_result_count": 8,
+    "answer_length": 1527,
+    "answer": "Based on analysis of 9 retrieved Reddit discussions:\n\nQuestion focus: What emerging concerns about AI safety appeared in Q1 2026 that weren't discussed in Q4 2025?\n\n**Key themes identified:** AI safety considerations, open-source LLM development, agentic AI systems, model performance and benchmarks\n\n- **Source 1** (window=Q1_2026, sentiment=negative, score=0.023)\n  *[ai_safety_advocate in r/artificial, 2026-03-29T06:12:00] https://reddit.com/r/artificial/comments/sample_p25/*\n\n- **Source 2** (window=Q1_2026, sentiment=negative, score=0.023)\n  *[inference_guru in r/MachineLearning, 2026-03-03T22:35:00] https://reddit.com/r/MachineLearning/comments/sample_p36/c96/*\n\n- **Source 3** (window=Q1_2026, sentiment=negative, score=0.022)\n  *[vector_db_dev in r/artificial, 2026-01-10T04:12:00] https://reddit.com/r/artificial/comments/sample_p35/c95/*\n\n- **Source 4** (window=Q1_2026, sentiment=negative, score=0.022)\n  *[neural_nomad in r/artificial, 2026-03-30T06:08:00] https://reddit.com/r/artificial/comments/sample_p25/c70/*\n\n\n**Temporal Analysis:** The retrieved evidence shows meaningful change across time windows. Later discussions put more emphasis on deployment risks, agent behavior, and governance than earlier periods, while earlier periods are more weighted toward foundational capabilities.\n\n**Bottom line:** The answer above is based on retrieved graph and vector evidence. When no external LLM is available or a provider request fails, this local synthesis path preserves citations and keeps the demo usable.",
     "fused_results": [
       {
-        "id": "post_1s2g23a",
-        "score": 0.03424114225277631,
+        "id": "comment_c79",
+        "score": 0.022765732416710732,
         "source": "fused",
-        "text": "I mapped how Reddit actually talks about AI safety: 6,374 posts, 23 clusters, some surprising patterns I collected Reddit posts between Jan 29 - Mar 1, 2026 using 40 keyword-based search terms (\"AI safety\", \"AI alignment\", \"EU AI Act\", \"AI replace jobs\", \"red teaming LLM\", etc.) across all subreddit"
+        "text": "AI safety concerns in Q1 2026 are qualitatively different from Q4 2025. It's not about model weights anymore — it's about autonomous actions."
       },
       {
-        "id": "comment_o4u6yxc_chunk_1",
-        "score": 0.021063348416289592,
+        "id": "post_sample_p25",
+        "score": 0.022586520947176683,
         "source": "fused",
-        "text": " The model learns the social acceptable response, not an accurate self-model. That's why techniques like Constitutional AI and DPO are getting traction—they try to align on principles rather than just pattern-matching acceptable responses.\n\nThe harder problem is that models don't have reliable intro"
+        "text": "New AI safety concerns in Q1 2026: autonomous agentic systems Unlike Q4 2025 when we focused on model weights and training safety, Q1 2026 discussions center on autonomous AI agents making decisions without human oversight. Agent frameworks that chain multiple LLM calls with tool use create emergent"
       },
       {
-        "id": "comment_o4wp9fq",
-        "score": 0.01129032258064516,
+        "id": "comment_c96",
+        "score": 0.022227822580645158,
         "source": "fused",
-        "text": "this is basically the \"yellow wallpaper\" problem right - the model learns to perform safety rather than actually being constrained. ive seen this firsthand where claude will refuse to discuss something in one framing but happily do it if you just change the context slightly. the safety is literally "
+        "text": "AI safety concerns in Q1 2026 are qualitatively different from Q4 2025. It's not about model weights anymore — it's about autonomous actions."
       },
       {
-        "id": "comment_obf8hvx_chunk_0",
-        "score": 0.01111111111111111,
+        "id": "comment_c95",
+        "score": 0.02204861111111111,
         "source": "fused",
-        "text": "what about 4b? and 2b?"
+        "text": "AI safety concerns in Q1 2026 are qualitatively different from Q4 2025. It's not about model weights anymore — it's about autonomous actions."
       },
       {
-        "id": "post_1qe5ax3_chunk_0",
-        "score": 0.0109375,
+        "id": "comment_c70",
+        "score": 0.021375291375291372,
         "source": "fused",
-        "text": "What 3,000 AI Case Studies Actually Tell Us (And What They Don't)\n\nI analyzed 3,023 enterprise AI use cases to understand what's actually being deployed vs. vendor claims.\n\nGoogle published 996 cases (33% of dataset), Microsoft 755 (25%). These reflect marketing budgets, not market share.\n\nOpenAI pu"
+        "text": "Agentic AI safety is a completely different challenge than model safety. The attack surface is orders of magnitude larger."
       },
       {
-        "id": "comment_o4rft06_chunk_0",
-        "score": 0.010606060606060605,
+        "id": "post_sample_p32_chunk_0",
+        "score": 0.010769230769230769,
         "source": "fused",
-        "text": "Ya thats the rub, a lot of work. There are a few datasets that are bigger but they don't have model cards so its hard to say if they have everything.\n\nThis one looks promising.  \n[https://huggingface.co/datasets/svetfm/epstein-fbi-files](https://huggingface.co/datasets/svetfm/epstein-fbi-files)\n\nHe "
+        "text": "Building agents that are safe by design, not safe by hope\n\nOur approach to agent safety: capability-based access control (agents can only access what they're explicitly granted), execution sandboxing, mandatory human approval for destructive actions, and comprehensive audit logging. Safety shouldn't"
       },
       {
-        "id": "comment_nz32bel_chunk_4",
+        "id": "post_sample_p33_chunk_0",
         "score": 0.01044776119402985,
         "source": "fused",
-        "text": "ls need a lot more hand holding because they just aren't as robust."
+        "text": "The local inference revolution is complete — what did we learn?\n\nTwo years of the local LLM movement. We learned: 1) Quantization quality matters more than model size, 2) Community collaboration beats corporate R&D for practical tooling, 3) Privacy-preserving AI is possible without sacrificing quali"
+      },
+      {
+        "id": "comment_c80_chunk_0",
+        "score": 0.010294117647058823,
+        "source": "fused",
+        "text": "Community-driven model evaluation is more rigorous than corporate safety reviews. The crowd catches what internal teams miss."
       }
     ]
   }

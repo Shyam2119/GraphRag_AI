@@ -74,7 +74,13 @@ class RetrievalResult:
         sub = self.metadata.get("subreddit", "")
         ts = self.metadata.get("created_at", "")
         url = self.metadata.get("url", self.id)
-        return f"[{author} in r/{sub}, {ts}] {url}"
+        if sub and ts:
+            return f"[{author} in r/{sub}, {ts}] {url}"
+        if sub:
+            return f"[{author} in r/{sub}] {url}"
+        if ts:
+            return f"[{author}, {ts}] {url}"
+        return f"[{author}] {url}"
 
 
 @dataclass
