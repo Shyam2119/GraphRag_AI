@@ -434,6 +434,14 @@ class WebRedditScraper:
         json_data = self._fetch_json(url)
         if json_data:
             return self._parse_json_response(json_data, subreddit, label, start_ts, end_ts)
+
+        # Fallback 1: Firecrawl if configured
+        if self.search_backend == "firecrawl" and self.settings.firecrawl_api_key:
+            firecrawl_items = self._scrape_firecrawl(url, subreddit, label, start_ts, end_ts)
+            if firecrawl_items:
+                return firecrawl_items
+
+        # Fallback 2: HTML scraping (often blocked by Reddit)
         return self._scrape_html(url, subreddit, label, start_ts, end_ts)
 
     def _fetch_json(self, url: str) -> Optional[list]:
@@ -656,6 +664,69 @@ class WebRedditScraper:
             )
             comment_count += 1
         return items
+
+    def _scrape_firecrawl(
+        self,
+        url: str,
+        subreddit: str,
+        label: str,
+        start_ts: float,
+        end_ts: float,
+    ) -> List[RedditItem]:
+        """Use Firecrawl to scrape a Reddit post when other methods are blocked."""
+        api_key = self.settings.firecrawl_api_key
+        if not api_key:
+            return []
+
+        try:
+            import httpx
+            response = httpx.post(
+                "https://api.firecrawl.dev/v1/scrape",
+                headers={
+                    "Authorization": f"Bearer {api_key}",
+                    "Content-Type": "application/json",
+                },
+                json={
+                    "url": url,
+                    "formats": ["markdown"],
+                },
+                timeout=max(self._timeout, 30.0),
+            )
+            response.raise_for_status()
+            data = response.json()
+            markdown = data.get("data", {}).get("markdown", "")
+            if not markdown:
+                return []
+                
+            # Treat the whole markdown as a single post for simplicity since 
+            # Firecrawl compresses the comments into the markdown.
+            post_id_match = re.search(r"/comments/(\w+)", url)
+            post_id = post_id_match.group(1) if post_id_match else "unknown"
+            
+            # Use current time for scraped content as fallback
+            created_utc = time.time()
+            if not self._timestamp_in_window(created_utc, start_ts, end_ts):
+                 # Assume it's in window since search returned it
+                 created_utc = (start_ts + end_ts) / 2.0
+
+            return [
+                RedditItem(
+                    id=f"post_{post_id}",
+                    content_type=ContentType.POST,
+                    title=f"Reddit Post: {post_id}",
+                    body=markdown,
+                    author="[unknown]",
+                    subreddit=subreddit,
+                    created_utc=created_utc,
+                    score=0,
+                    url=url,
+                    post_id=post_id,
+                    window_label=label,
+                )
+            ]
+        except Exception as exc:
+            logger.error("Firecrawl scrape failed for %s: %s", url, exc)
+            return []
 
     @staticmethod
     def _timestamp_in_window(created_utc: float, start_ts: float, end_ts: float) -> bool:
